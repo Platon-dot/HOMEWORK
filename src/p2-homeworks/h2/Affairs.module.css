@@ -1,0 +1,31 @@
+.main {
+    margin: 5px;
+    max-width: 270px;
+}
+
+.filterBottoms {
+
+    display: flex;
+    justify-content: space-around;
+}
+
+.tasks {
+    margin: 15px;
+
+    display: grid;
+    grid-template-areas:
+    'text priority bottom';
+    grid-template-columns: 150px 60px 30px;
+}
+
+.taskText {
+    grid-area: text;
+}
+
+.priorityOfTask {
+    grid-area: priority;
+}
+
+.closeBottom {
+    grid-area: bottom;
+}

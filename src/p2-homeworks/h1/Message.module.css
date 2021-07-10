@@ -1,0 +1,73 @@
+.userMessage {
+    margin-top: 20px;
+    margin-bottom: 40px;
+    margin-left: 25px;
+}
+
+.messageUserBubble {
+    display: grid;
+    grid-template-areas:
+    "logo triangle bubble";
+    max-width: 300px;
+    grid-template-columns: 45px 25px 1fr;
+}
+
+.chatBubble {
+    padding: 5px 5px 5px 15px;
+    border-radius: 7px 7px 7px 0;
+    background: #082102;
+    font-size: 14px;
+    line-height: 1.4;
+
+    display: grid;
+    grid-template-areas:
+    "name name"
+    "message time";
+}
+
+
+img {
+    grid-area: logo;
+    height: 45px;
+    width: 45px;
+    align-content: center;
+}
+
+.triangle {
+    grid-area: triangle;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 8px 4px 7px 8px; /* размер и форма */
+    border-color: transparent #082102 #082102 transparent;
+    margin-right: 0;
+    margin-left: auto;
+    align-self: end;
+}
+
+.userName {
+    grid-area: name;
+    color: #7e7ab1;
+    font-weight: bold;
+}
+
+.userText {
+    grid-area: message;
+    color: white;
+    font-weight: normal;
+    padding-bottom: 8px;
+    padding-top: 5px;
+}
+
+.messageTime {
+    grid-area: time;
+    color: #12d214;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 7px;
+    padding-top: 12px;
+}
+
+
+
+

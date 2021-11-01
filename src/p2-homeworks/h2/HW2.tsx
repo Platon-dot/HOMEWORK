@@ -33,18 +33,17 @@ export const deleteAffair = (affairs: AffairType[], _id: number) => {
 }
 
 function HW2() {
-    const [affairs, setAffairs] = useState<AffairType[]>(defaultAffairs) // need to fix any
+    const [affairs, setAffairs] = useState<AffairType[]>(defaultAffairs)
     const [filter, setFilter] = useState<FilterType>('all')
 
     const filteredAffairs = filterAffairs(affairs, filter)
-    const deleteAffairCallback = (_id: number) => setAffairs(deleteAffair(affairs, _id)) // need to fix any
+    const deleteAffairCallback = (_id: number) => setAffairs(deleteAffair(affairs, _id))
 
     return (
         <div>
             <hr/>
             <div className={style.main}>
                 homeworks 2
-
                 {/*should work (должно работать)*/}
                 <Affairs
                     data={filteredAffairs}
